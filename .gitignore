@@ -1,0 +1,4 @@
+*.n3
+target/
+*log
+Query/
