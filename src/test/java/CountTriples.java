@@ -4,8 +4,8 @@ import org.junit.Test;
 import java.io.*;
 
 public class CountTriples {
-    String dataFile = Config.INPUTFILE;
-    int slaveNum = Config.SLAVENUM;
+    String dataFile = Config.getProp("INPUTFILE");
+    int slaveNum = Integer.valueOf(Config.getProp("SLAVENUM"));
 
     @Test
     public void countTriplesOfSimpleFile() throws IOException{

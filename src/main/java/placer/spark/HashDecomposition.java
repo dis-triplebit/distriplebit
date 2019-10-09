@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class HashDecomposition {
-    final int k = Config.SLAVENUM;
+    final int k = Integer.valueOf(Config.getProp("SLAVENUM"));
     Map<Integer, Integer> vertexTriplesNum;
     String dir;
     int crossPartVertexNum;
@@ -24,7 +24,7 @@ public class HashDecomposition {
             System.out.println("data file arg!");
             return;
         }
-        String dir = Config.OUTPUTPATH;
+        String dir = Config.getProp("OUTPUTPATH");
         if (System.getProperty("os.name").contains("Windows")) {
             dir = "C:\\Users\\peng\\IdeaProjects\\distriplebit\\";
         } else if (System.getProperty("user.home").contains("ganpeng")) {

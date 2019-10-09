@@ -11,7 +11,7 @@ public class HashStrategyTest {
 
     @Test
     public void test() {
-        String dataFile = Config.INPUTFILE;
+        String dataFile = Config.getProp("INPUTFILE");
         try {
             BufferedReader reader = new BufferedReader(new FileReader(dataFile));
             HashStrategy hashStrategy = new HashStrategy(reader);
