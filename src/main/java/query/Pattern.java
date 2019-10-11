@@ -19,4 +19,21 @@ public class Pattern {
     public boolean isObjectVar() {
         return object.startsWith("?");
     }
+
+    @Override
+    public String toString() {
+        String rst = "";
+        if (subject.startsWith("http"))
+            rst += "<" + subject + ">";
+        else rst += subject;
+        rst += " ";
+        if (predicate.startsWith("http"))
+            rst += "<" + predicate + ">";
+        else rst += predicate;
+        rst += " ";
+        if (object.startsWith("http"))
+            rst += "<" + object + ">";
+        else rst += object;
+        return rst;
+    }
 }

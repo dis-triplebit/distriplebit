@@ -31,6 +31,17 @@ public class HashStrategy {
         }
     }
 
+    public static void main(String[] args) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
+            HashStrategy hashStrategy = new HashStrategy(reader);
+            hashStrategy.place();
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public boolean place() throws IOException {
         String line;
         while ((line = reader.readLine()) != null) {

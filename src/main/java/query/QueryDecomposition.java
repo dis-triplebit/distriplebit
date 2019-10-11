@@ -8,9 +8,7 @@ import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -32,18 +30,29 @@ public class QueryDecomposition {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(
-                new FileReader("C:\\Users\\peng\\IdeaProjects\\distriplebit\\Query\\queryLUBM7"));
+        // 不加下面这行运行jar包会报错，尚不知道原因。解决方案来自
+        // https://stackoverflow.com/questions/38081684/compiling-a-class-which-depends-on-jena
+        org.apache.jena.query.ARQ.init();
+        BufferedReader reader = null;
+        try {
+            System.out.println("current path: " + new File("").getCanonicalPath());
+            reader = new BufferedReader(
+                    new FileReader(args[0]));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return;
+        }
         StringBuffer queryString = new StringBuffer();
         String line;
         while ((line = reader.readLine()) != null) {
             queryString.append(line + "\n");
         }
+        System.out.println(queryString);
         Query query = QueryFactory.create(queryString.toString());
         QueryDecomposition queryDecomposition = new QueryDecomposition(query);
         queryDecomposition.init();
         queryDecomposition.decompose();
-
+        queryDecomposition.generateQuery();
     }
 
     public void init() {
@@ -103,8 +112,28 @@ public class QueryDecomposition {
         return true;
     }
 
-    public void generateQuery() {
+    public void generateQuery() throws IOException {
+        for (int i = 0; i < queries.size(); i++) {
+            MyQuery query = queries.get(i);
+            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("subquery-" + i + ".sq"));
+            BufferedWriter writer = new BufferedWriter(osw);
+            writer.write(constructQuery(query));
+            writer.close();
+            osw.close();
+        }
+    }
 
+    public String constructQuery(MyQuery query) {
+        String subQuery = "select ";
+        for (String var : query.vars) {
+            subQuery += var + " ";
+        }
+        subQuery += "where {\n";
+        for (Pattern pattern : query.patterns) {
+            subQuery += "\t" + pattern + " .\n";
+        }
+        subQuery += "}\n";
+        return subQuery;
     }
 
     public Pattern tpToPat(TriplePath tp) {
