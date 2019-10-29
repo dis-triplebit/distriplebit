@@ -13,10 +13,8 @@ public class HashStrategyTest {
     public void test() {
         String dataFile = Config.getProp("INPUTFILE");
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(dataFile));
-            HashStrategy hashStrategy = new HashStrategy(reader);
+            HashStrategy hashStrategy = new HashStrategy(dataFile);
             hashStrategy.place();
-            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

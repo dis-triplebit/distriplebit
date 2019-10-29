@@ -52,7 +52,7 @@ public class QueryDecomposition {
         QueryDecomposition queryDecomposition = new QueryDecomposition(query);
         queryDecomposition.init();
         queryDecomposition.decompose();
-        queryDecomposition.generateQuery();
+        queryDecomposition.generateQuery(args[1]);
     }
 
     public void init() {
@@ -61,7 +61,7 @@ public class QueryDecomposition {
             Element l = ((ElementGroup) e).getElements().get(0);
             tps = ((ElementPathBlock) l).getPattern().getList();
         } else {
-            System.out.printf("----1-----");
+            System.out.printf("query.QueryDecomposition.init false");
         }
         for (TriplePath tp : tps) {
             int x = degree.getOrDefault(tp.getSubject().toString(), 0);
@@ -112,15 +112,19 @@ public class QueryDecomposition {
         return true;
     }
 
-    public void generateQuery() throws IOException {
+    public void generateQuery(String fileName) throws IOException {
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fileName));
+        BufferedWriter writer = new BufferedWriter(osw);
+        for (String s : queries.get(0).projection) {
+            writer.write(s + " ");
+        }
+        writer.write("\n---\n");
         for (int i = 0; i < queries.size(); i++) {
             MyQuery query = queries.get(i);
-            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("subquery-" + i + ".sq"));
-            BufferedWriter writer = new BufferedWriter(osw);
-            writer.write(constructQuery(query));
-            writer.close();
-            osw.close();
+            writer.write(constructQuery(query) + "\n---\n");
         }
+        writer.close();
+        osw.close();
     }
 
     public String constructQuery(MyQuery query) {
@@ -132,7 +136,7 @@ public class QueryDecomposition {
         for (Pattern pattern : query.patterns) {
             subQuery += "\t" + pattern + " .\n";
         }
-        subQuery += "}\n";
+        subQuery += "}";
         return subQuery;
     }
 
