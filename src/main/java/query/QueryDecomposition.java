@@ -86,7 +86,7 @@ public class QueryDecomposition {
             MyQuery myQuery = new MyQuery();
             List<Pattern> patterns = myQuery.patterns;
             Set<String> vars = myQuery.vars;
-            Set<String> projection = myQuery.projection;
+            List<String> projection = myQuery.projection;
             List<Var> projectVars = query.getProjectVars();
             for (Var projectVar : projectVars) {
                 projection.add("?" + projectVar.getVarName());
@@ -104,6 +104,8 @@ public class QueryDecomposition {
                     updateVars(vars, pattern);
                     iterator.remove();
                 }
+                // Created by peng on 19/11/04 15:27
+                // 如果谓词是变量呢？
             }
             if (!myQuery.patterns.isEmpty()) {
                 queries.add(myQuery);
@@ -117,6 +119,12 @@ public class QueryDecomposition {
         BufferedWriter writer = new BufferedWriter(osw);
         for (String s : queries.get(0).projection) {
             writer.write(s + " ");
+        }
+        for (MyQuery myQuery : queries) {
+            writer.write('\n');
+            for (String var : myQuery.vars) {
+                writer.write(var + " ");
+            }
         }
         writer.write("\n---\n");
         for (int i = 0; i < queries.size(); i++) {

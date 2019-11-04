@@ -13,7 +13,7 @@ public class HashStrategyTest {
     public void test() {
         String dataFile = Config.getProp("INPUTFILE");
         try {
-            HashStrategy hashStrategy = new HashStrategy(dataFile);
+            HashStrategy hashStrategy = new HashStrategy(dataFile, "./");
             hashStrategy.place();
         } catch (IOException e) {
             e.printStackTrace();

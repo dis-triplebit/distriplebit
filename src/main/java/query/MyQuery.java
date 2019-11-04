@@ -8,12 +8,12 @@ import java.util.Set;
 class MyQuery {
     List<Pattern> patterns;
     Set<String> vars;
-    Set<String> projection;
+    List<String> projection;
 
     public MyQuery() {
         patterns = new ArrayList<>();
         vars = new HashSet<>();
-        projection = new HashSet<>();
+        projection = new ArrayList<>();
     }
     /*
     public static MyQuery loadQuery(String queryPath) {
