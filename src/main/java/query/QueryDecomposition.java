@@ -52,7 +52,7 @@ public class QueryDecomposition {
         QueryDecomposition queryDecomposition = new QueryDecomposition(query);
         queryDecomposition.init();
         queryDecomposition.decompose();
-        queryDecomposition.generateQuery(args[1]);
+        queryDecomposition.generateQuery(args[0], args[1]);
     }
 
     public void init() {
@@ -114,7 +114,11 @@ public class QueryDecomposition {
         return true;
     }
 
-    public void generateQuery(String fileName) throws IOException {
+    public void generateQuery(String srcFile, String fileName) throws IOException {
+        boolean flag = false;
+        if (queries.size() == 1) {
+            flag = true;
+        }
         OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fileName));
         BufferedWriter writer = new BufferedWriter(osw);
         for (String s : queries.get(0).projection) {
@@ -122,24 +126,34 @@ public class QueryDecomposition {
         }
         for (MyQuery myQuery : queries) {
             writer.write('\n');
-            for (String var : myQuery.vars) {
-                writer.write(var + " ");
-            }
+            if (flag) {
+                for (String s : myQuery.projection) {
+                    writer.write(s + " ");
+                }
+            } else
+                for (String var : myQuery.vars) {
+                    writer.write(var + " ");
+                }
         }
         writer.write("\n---\n");
         for (int i = 0; i < queries.size(); i++) {
             MyQuery query = queries.get(i);
-            writer.write(constructQuery(query) + "\n---\n");
+            writer.write(constructQuery(query, flag) + "\n---\n");
         }
         writer.close();
         osw.close();
     }
 
-    public String constructQuery(MyQuery query) {
+    public String constructQuery(MyQuery query, boolean flag) {
         String subQuery = "select ";
-        for (String var : query.vars) {
-            subQuery += var + " ";
-        }
+        if (flag) {
+            for (String s : query.projection) {
+                subQuery += s + " ";
+            }
+        } else
+            for (String var : query.vars) {
+                subQuery += var + " ";
+            }
         subQuery += "where {\n";
         for (Pattern pattern : query.patterns) {
             subQuery += "\t" + pattern + " .\n";

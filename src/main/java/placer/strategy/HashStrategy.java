@@ -22,7 +22,9 @@ public class HashStrategy {
         }
         this.reader = new BufferedReader(new FileReader(dataFile));
         writers = new BufferedWriter[slaveNum];
-        int dot = dataFile.indexOf(".");
+        File file = new File(dataFile);
+        String filename = file.getName();
+        int dot = filename.lastIndexOf(".");
         if (dot == -1) {
             for (int i = 0; i < writers.length; i++) {
                 File outFile = new File(dir + dataFile + "-" + i);
@@ -31,8 +33,8 @@ public class HashStrategy {
                 writers[i] = new BufferedWriter(osw);
             }
         } else {
-            String prefix = dataFile.substring(0, dot);
-            String surfix = dataFile.substring(dot);
+            String prefix = filename.substring(0, dot);
+            String surfix = filename.substring(dot);
             for (int i = 0; i < writers.length; i++) {
                 File outFile = new File(dir + prefix + "-" + i + surfix);
                 outFile.getParentFile().mkdirs();

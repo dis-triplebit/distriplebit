@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe7c64d-51d7-46bb-bfdc-6e06121d832d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query/queryWATDIV/F4.rq" beforeDir="false" afterPath="$PROJECT_DIR$/Query/queryWATDIV/F4.rq" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/query/MyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/query/MyQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/placer/strategy/HashStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placer/strategy/HashStrategyTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,16 +32,16 @@
     <session id="-963700525">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="8" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,7 +54,7 @@
           <entry key="Universities-subquery-2" value="1" />
           <entry key="class" value="3" />
           <entry key="file" value="5" />
-          <entry key="java" value="97" />
+          <entry key="java" value="98" />
           <entry key="log" value="5" />
           <entry key="n3" value="9" />
           <entry key="pom" value="2" />
@@ -76,7 +73,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="97" />
+          <entry key="JAVA" value="98" />
           <entry key="PLAIN_TEXT" value="48" />
           <entry key="Properties" value="9" />
           <entry key="XML" value="8" />
@@ -86,7 +83,7 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="file" value="3" />
-          <entry key="java" value="6418" />
+          <entry key="java" value="6685" />
           <entry key="properties" value="41" />
           <entry key="rq" value="1" />
           <entry key="sq" value="4" />
@@ -95,7 +92,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6418" />
+          <entry key="JAVA" value="6685" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="Properties" value="41" />
           <entry key="XML" value="54" />
@@ -108,20 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="126" column="13" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/query/MyQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="3168">
+              <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/query/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="368" column="30" lean-forward="true" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
+            <state relative-caret-position="7128">
+              <caret line="368" column="30" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -141,17 +126,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/sparql/core/VarExprList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="770">
               <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="69" column="51" lean-forward="true" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+            <state relative-caret-position="440">
+              <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/config/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,25 +165,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+            <state relative-caret-position="132">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataDir/triples20191023-0.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="1338" column="19" selection-start-line="1338" selection-start-column="19" selection-end-line="1338" selection-end-column="19" />
+            <state relative-caret-position="9174">
+              <caret line="452" column="18" selection-start-line="452" selection-start-column="18" selection-end-line="452" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -241,11 +233,11 @@
         <option value="$PROJECT_DIR$/Query/file" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/placer/strategy/HashStrategyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java" />
         <option value="$PROJECT_DIR$/file" />
         <option value="$PROJECT_DIR$/Query/queryWATDIV/F4.rq" />
         <option value="$PROJECT_DIR$/src/main/java/query/MyQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java" />
       </list>
     </option>
   </component>
@@ -294,17 +286,13 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="distriplebit" type="b2602c69:ProjectViewProjectNode" />
               <item name="distriplebit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="distriplebit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distriplebit" type="462c0819:PsiDirectoryNode" />
-              <item name="DataDir" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="distriplebit" type="b2602c69:ProjectViewProjectNode" />
@@ -411,14 +399,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Executors&#9;PSI&#9;JAVA://java.util.concurrent.Executors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572853695620" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573002561967" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -439,11 +426,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QueryDecomposition">
+  <component name="RunManager" selected="Application.HashStrategy">
     <configuration name="HashStrategy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="placer.strategy.HashStrategy" />
       <module name="distriplebit" />
-      <option name="PROGRAM_PARAMETERS" value="LUBM1U.n3 DataDir" />
+      <option name="PROGRAM_PARAMETERS" value="triples20191023.txt DataDir" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -495,8 +482,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QueryDecomposition" />
         <item itemvalue="Application.HashStrategy" />
+        <item itemvalue="Application.QueryDecomposition" />
         <item itemvalue="JUnit.HashStrategyTest.test" />
         <item itemvalue="JUnit.QueryDecomposition.test" />
         <item itemvalue="JUnit.MyQueryTest.queryTest" />
@@ -530,7 +517,11 @@
       <workItem from="1572226077083" duration="7263000" />
       <workItem from="1572590648921" duration="120000" />
       <workItem from="1572591822381" duration="5375000" />
-      <workItem from="1572785141053" duration="8300000" />
+      <workItem from="1572785141053" duration="8912000" />
+      <workItem from="1573001291849" duration="1258000" />
+      <workItem from="1573004539170" duration="804000" />
+      <workItem from="1573110377626" duration="2251000" />
+      <workItem from="1573736000488" duration="650000" />
     </task>
     <servers />
   </component>
@@ -567,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162008000" />
+    <option name="totallyTimeSpent" value="167583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,7 +573,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.23400854" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.24466951" />
       <window_info id="Structure" order="1" sideWeight="0.5016077" side_tool="true" weight="0.20095949" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -591,7 +582,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22961374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22961374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34334764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -610,7 +601,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="8" visible="true" weight="0.08742005" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.08742005" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
@@ -625,7 +616,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java</url>
-          <line>69</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -643,7 +634,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java</url>
-          <line>66</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -664,6 +655,12 @@
           <line>83</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -769,16 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Universities-2.n3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -845,47 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/placer/strategy/HashStrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1338" column="19" selection-start-line="1338" selection-start-column="19" selection-end-line="1338" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataDir/triples20191023-0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/sparql/core/VarExprList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/query/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="368" column="30" lean-forward="true" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/MyQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Query/queryLUBM6">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -893,23 +839,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/MyQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="69" column="51" lean-forward="true" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+        <state relative-caret-position="264">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/QueryDecomposition.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/query/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="126" column="13" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="7128">
+          <caret line="368" column="30" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.12.0/jena-arq-3.12.0-sources.jar!/org/apache/jena/sparql/core/VarExprList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -922,8 +879,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="132">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataDir/triples20191023-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9174">
+          <caret line="452" column="18" selection-start-line="452" selection-start-column="18" selection-end-line="452" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/placer/strategy/HashStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/placer/strategy/HashStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
